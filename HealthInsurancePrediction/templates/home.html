@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Insurance Prediction</title>
+  </head>
+
+  <body>
+    <h1><div style="text-align:center"><font color="blue">Health Insurance Charges prediction</font></div></h1>
+    <hr>
+    </br>
+    <h2><div style="text-align:center">Enter the values for Age, Sex, BMI, No of Childrens, Smoker, Region</div></h2>
+    </br>
+    <div class='container'>
+      <div class='row'>
+        <div class='col-6'>
+          <form method="POST" action="/predict">
+            <div class="form-group">
+              <label for="Age"><p class="font-weight-bold">Age</p></label>
+              <input type="text" name="Age">
+              <small id="AgeHelp" class="form-text text-muted">Enter Age of the person</small>
+              </div>
+
+              <div class="form-group">
+                <label for="Sex"><p class="font-weight-bold">Sex</p></label>
+                <input type="text" name="Sex">
+                <small id="SexHelp" class="form-text text-muted">Enter Gender, it should be Male/Female</small>
+                </div>
+
+                <div class="form-group">
+                  <label for="BMI"><p class="font-weight-bold">BMI</p></label>
+                  <input type="text" name="BMI">
+                  <small id="BMIHelp" class="form-text text-muted">Enter Body Mass Index (BMI)</small>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="Childrens"><p class="font-weight-bold">Childrens</p></label>
+                    <input type="text" name="Childrens">
+                    <small id="ChildrensHelp" class="form-text text-muted">Enter Number of Childrens</small>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="Smoker"><p class="font-weight-bold">Smoker</p></label>
+                      <input type="text" name="Smoker">
+                      <small id="SmokerHelp" class="form-text text-muted">Are you Smoker yes/no</small>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="Region"><p class="font-weight-bold">Region</p></label>
+                        <input type="text" name="Region">
+                        <small id="RegionHelp" class="form-text text-muted">Enter the Region, it should be either Northeast/Northwest/Southeast/Southwest</small>
+                        </div>
+
+                        <input class='btn btn-primary' type='submit' value='Submit'>
+            </form>
+
+          </div>
+          </div>
+          </div>
+  </body>
+
+</html>
